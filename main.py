@@ -108,4 +108,5 @@ async def setlevel(ctx, member: discord.Member, level: int):
     await update_nickname(member, level)
     await ctx.send(f"Set {member.mention} to level {level}!")
 
-bot.run('YOUR_BOT_TOKEN')
+bot.run(os.getenv('DISCORD_TOKEN'))
+
